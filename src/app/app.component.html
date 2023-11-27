@@ -1,51 +1,95 @@
 <app-nav-bar></app-nav-bar>
 <div class="flex flex-col gap-8 md:gap-16 lg:gap-28 xl:gap-40">
-  <div class="flex flex-col md:flex-row  gap-4 general_padding bg-[#F5F7FA] md:py-10 lg:py-20  xl:py-30 2xl:py-36">
-    <div class="w-full md:w-3/5 flex flex-col gap-3 md:gap-6 lg:gap-8 xl:gap-12 py-4 md:pr-5 xl:pr-10">
+  <div
+    class="flex flex-col md:flex-row gap-4 general_padding bg-[#F5F7FA] md:py-10 lg:py-20 xl:py-30 2xl:py-36"
+  >
+    <div
+      class="w-full md:w-3/5 flex flex-col gap-3 md:gap-6 lg:gap-8 py-4 md:pr-5 xl:pr-10"
+    >
       <div class="">
-        <p class="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#4D4D4D]">Lessons and insights</p>
-        <p class="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#4CAF4F]">from 8 years</p>
+        <p
+          class="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#4D4D4D]"
+        >
+          Lessons and insights
+        </p>
+        <p
+          class="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#4CAF4F]"
+        >
+          from 8 years
+        </p>
       </div>
-      <p class="text-lg md:text-xl lg:text-2xl">Where to grow your business as a photographer: site or social media?</p>
+      <p class="text-lg md:text-xl lg:text-2xl">
+        Where to grow your business as a photographer: site or social media?
+      </p>
       <div class="">
-        <button type="button"
-                class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 lg:px-8 lg:py-4 text-center dark:focus:ring-blue-800 text-lg lg:text-xl">
+        <button
+          type="button"
+          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center dark:focus:ring-blue-800 text-lg lg:text-xl"
+        >
           Register
         </button>
       </div>
     </div>
 
     <div class="w-full md:w-2/5 hidden md:flex">
-      <img src="./assets/images/Illustration.svg" alt="">
+      <img src="./assets/images/Illustration.svg" alt="" />
     </div>
   </div>
 
   <div class="general_padding flex flex-col gap-3 md:gap-6 lg:gap-8">
-    <div class="flex flex-col gap-2 xl:gap-4 2xl:gap-6 w-full md:justify-center md:text-center">
-      <p class="text-[#4D4D4D] text-2xl md:text-4xl xl:text-5xl font-bold">Our Clients</p>
-      <p class="text-[#717171] text-lg md:text-xl lg:text-2xl">We have been working with some Fortune 500+ clients</p>
+    <div
+      class="flex flex-col gap-2 xl:gap-4 2xl:gap-6 w-full md:justify-center md:text-center"
+    >
+      <p class="text-[#4D4D4D] text-2xl md:text-4xl xl:text-5xl font-bold">
+        Our Clients
+      </p>
+      <p class="text-[#717171] text-lg md:text-xl lg:text-2xl">
+        We have been working with some Fortune 500+ clients
+      </p>
     </div>
     <div class="flex justify-between flex-wrap gap-2">
-      <img *ngFor="let client of clients" [src]="'./assets/images/'+client.img" class="md:h-10 lg:h-14 xl:h-16" alt="">
+      <img
+        *ngFor="let client of clients"
+        [src]="'./assets/images/' + client.img"
+        class="md:h-10 lg:h-14 xl:h-16"
+        alt=""
+      />
     </div>
   </div>
 
   <div class="general_padding w-full flex flex-col gap-3 lg:gap-8 xl:gap-10">
     <div class="flex flex-col gap-2 items-center">
       <div
-        class="flex w-full lg:w-[75%] xl:w-[70%] 2xl:w-[60%] flex-col gap-2 xl:gap-4 2xl:gap-6  md:justify-center md:text-center">
-        <p class="text-[#4D4D4D] text-2xl md:text-4xl xl:text-5xl font-bold ">Manage your entire community in a single
-          system</p>
-        <p class="text-[#717171] text-lg md:text-xl lg:text-2xl">Who is Nextcent suitable for?</p>
+        class="flex w-full lg:w-[75%] xl:w-[70%] 2xl:w-[60%] flex-col gap-2 xl:gap-4 2xl:gap-6 md:justify-center md:text-center"
+      >
+        <p class="text-[#4D4D4D] text-2xl md:text-4xl xl:text-5xl font-bold">
+          Manage your entire community in a single system
+        </p>
+        <p class="text-[#717171] text-lg md:text-xl lg:text-2xl">
+          Who is Nextcent suitable for?
+        </p>
       </div>
     </div>
     <div class="">
-      <div class="grid grid-cols-2 gap-3 md:gap-6 xl:gap-8 md:grid-cols-3 text-center">
-        <div *ngFor="let com of communities" class="flex flex-col gap-2 xl:gap-4 justify-center lg:px-6 xl:px-8">
-          <img [src]="'../assets/images/'+com.img" class="h-32 md:h-40 lg:h-48 xl:h-52" alt="">
-          <p class="font-bold text-2xl xl:text-4xl ">Membership Organisations</p>
-          <p class="md:text-lg lg:text-xl ">Our membership management software provides full automation of membership
-            renewals and payments</p>
+      <div
+        class="grid grid-cols-2 gap-3 md:gap-6 xl:gap-8 md:grid-cols-3 text-center"
+      >
+        <div
+          *ngFor="let com of communities"
+          class="flex flex-col gap-2 xl:gap-4 justify-center lg:px-6 xl:px-8"
+        >
+          <img
+            [src]="'../assets/images/' + com.img"
+            class="h-28 md:h-32 lg:h-48 xl:h-52"
+            alt=""
+          />
+          <p class="font-bold text-xl md:text-2xl xl:text-4xl">
+            Membership Organisations
+          </p>
+          <p class="text-sm md:text-lg lg:text-xl">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
         </div>
       </div>
     </div>
@@ -53,41 +97,65 @@
 
   <div class="general_padding flex flex-row w-full items-center">
     <div class="w-2/5 hidden lg:flex">
-      <img src="./assets/images/Frame35.svg" class="" alt="">
+      <img src="./assets/images/Frame35.svg" class="" alt="" />
     </div>
-    <div class="lg:w-3/5 flex flex-col gap-2 xl:gap-6 2xl:gap-8 ">
-      <p class="font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-5xl text-[#4D4D4D]">The unseen of spending three
-        years at Pixelgrade</p>
-      <p class="md:text-lg lg:text-xl ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo
-        ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam
-        mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam
-        vitae, tempus sem. Donec elementum pulvinar odio.</p>
+    <div class="lg:w-3/5 flex flex-col gap-2 xl:gap-6 2xl:gap-8">
+      <p
+        class="font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-5xl text-[#4D4D4D]"
+      >
+        The unseen of spending three years at Pixelgrade
+      </p>
+      <p class="md:text-lg lg:text-xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+        justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque
+        placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis.
+        Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa
+        pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+      </p>
       <div class="">
-        <button type="button"
-                class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg px-3 py-2 lg:px-5 lg:py-4 text-center dark:focus:ring-blue-800 text-lg lg:text-xl">
+        <button
+          type="button"
+          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center dark:focus:ring-blue-800 text-base lg:text-lg"
+        >
           Learn More
         </button>
       </div>
     </div>
   </div>
 
-  <div class="bg-[#F5F7FA] general_padding  ">
-    <div class="p-4 md:p-8 lg:p-10 xl:p-20 w-full flex flex-col lg:flex-row gap-5">
-
-      <div class="w-full flex flex-col gap-2 lg:gap-4 xl:gap-6 lg:justify-center">
+  <div class="bg-[#F5F7FA] general_padding">
+    <div
+      class="py-4 md:py-8 lg:py-10 xl:py-14 w-full flex flex-col lg:flex-row gap-5"
+    >
+      <div
+        class="w-full flex flex-col gap-2 lg:gap-4 xl:gap-6 lg:justify-center"
+      >
         <div class="">
-          <p class="text-2xl lg:text-3xl xl:text-5xl font-bold text-[#4D4D4D]">Helping a local </p>
-          <p class="text-2xl lg:text-3xl xl:text-5xl  font-bold text-[#4CAF4F]">business reinvent itself</p>
+          <p class="text-2xl lg:text-3xl xl:text-5xl font-bold text-[#4D4D4D]">
+            Helping a local
+          </p>
+          <p class="text-2xl lg:text-3xl xl:text-5xl font-bold text-[#4CAF4F]">
+            business reinvent itself
+          </p>
         </div>
-        <p class="md:text-lg lg:text-xl">We reached here with our hard work and dedication</p>
+        <p class="md:text-lg lg:text-xl">
+          We reached here with our hard work and dedication
+        </p>
       </div>
       <div class="w-full grid grid-cols-2 gap-2 lg:gap-4 xl:gap-8">
-
         <div *ngFor="let member of members" class="flex gap-2 items-center">
-          <img [src]="'../assets/images/'+member.img" class="h-20 2xl:h-24 " alt="">
-          <div class="flex flex-col gap-3">
-            <p class="text-2xl  xl:text-3xl 2xl:text-4xl font-bold text-[#4D4D4D]">{{member.number}}</p>
-            <p class="md:text-lg lg:text-xl">{{member.title}}</p>
+          <img
+            [src]="'../assets/images/' + member.img"
+            class="h-10 md:h-16 2xl:h-24"
+            alt=""
+          />
+          <div class="flex flex-col gap-1 md:gap-3">
+            <p
+              class="text-lg md:text-2xl 2xl:text-3xl font-bold text-[#4D4D4D]"
+            >
+              {{ member.number }}
+            </p>
+            <p class="text-sm md:text-lg lg:text-xl">{{ member.title }}</p>
           </div>
         </div>
       </div>
@@ -96,52 +164,117 @@
 
   <div class="general_padding flex flex-row w-full items-center">
     <div class="w-2/5 hidden lg:flex">
-      <img src="./assets/images/pana.svg" class=" " alt="">
+      <img src="./assets/images/pana.svg" class=" " alt="" />
     </div>
-    <div class="lg:w-3/5 flex flex-col gap-2 xl:gap-6 2xl:gap-8 ">
-      <p class="font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-5xl text-[#4D4D4D]">How to design your site footer
-        like we did</p>
-      <p class="md:text-lg lg:text-xl ">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec
-        tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices
-        mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod
-        augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur
-        quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum
-        id gravida.</p>
+    <div class="lg:w-3/5 flex flex-col gap-2 xl:gap-6 2xl:gap-8">
+      <p
+        class="font-bold text-xl md:text-2xl xl:text-3xl 2xl:text-5xl text-[#4D4D4D]"
+      >
+        How to design your site footer like we did
+      </p>
+      <p class="md:text-lg lg:text-xl">
+        Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue
+        nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat
+        a magna. Donec quis erat at libero ultrices mollis. In hac habitasse
+        platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis
+        finibus. In euismod augue vitae nisi ultricies, non aliquet urna
+        tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis
+        massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis
+        libero. Donec consectetur faucibus ipsum id gravida.
+      </p>
       <div class="">
-        <button type="button"
-                class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg px-3 py-2 lg:px-5 lg:py-4 text-center dark:focus:ring-blue-800 text-lg lg:text-xl">
+        <button
+          type="button"
+          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center dark:focus:ring-blue-800 text-base lg:text-lg"
+        >
           Learn More
         </button>
       </div>
     </div>
   </div>
 
-  <div class="bg-[#F5F7FA] general_padding">
+  <div class="bg-[#F5F7FA] general_padding py-4 lg:py-8">
     <div class="flex flex-col md:flex-row gap-4 lg:gap-8 xl:gap-10">
       <div class="w-full lg:w-[30%] flex items-center">
-        <img src="../assets/images/t.svg" class="object-fill" alt="">
+        <img src="../assets/images/t.svg" class="object-fill" alt="" />
       </div>
 
-      <div class="w-full  flex flex-col gap-2 lg:gap-4">
-        <p class=" md:text-base lg:text-lg">
-          Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt
-          ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
-          molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse
-          cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum
-          pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque
-          vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
-          amet magna.
+      <div class="w-full flex flex-col gap-1 lg:gap-3">
+        <p class="md:text-base lg:text-lg">
+          Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis
+          sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus.
+          Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
+          molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula
+          molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue
+          ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu
+          turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim
+          sapien, vitae placerat ante feugiat eget. Quisque vulputate odio
+          neque, eget efficitur libero condimentum id. Curabitur id nibh id sem
+          dignissim finibus ac sit amet magna.
         </p>
-        <p class="md:text-base lg:text-lg font-bold text-[#4CAF4F]">Tim Smith</p>
-        <p class="md:text-base lg:text-lg">British Dragon Boat Racing Association</p>
-        <div class="flex flex-row justify-between">
-          <img *ngFor="let client of clients" [src]="'./assets/images/'+client.img" alt="">
+        <p class="md:text-base lg:text-lg font-bold text-[#4CAF4F]">
+          Tim Smith
+        </p>
+        <p class="md:text-base lg:text-lg">
+          British Dragon Boat Racing Association
+        </p>
+        <div class="flex flex-row justify-between items-center flex-wrap gap-4">
+          <img
+            *ngFor="let client of clients"
+            [src]="'./assets/images/' + client.img"
+            class="h-6 lg:h-8"
+            alt=""
+          />
+          <div class="flex mt-2 sm:mt-0">
+            <p
+              class="text-lg xl:text-xl font-bold text-[#4CAF4F]"
+            >
+              Meet all customers
+            </p>
+            '
+            <img src="../assets/images/Right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="general_padding flex flex-col gap-2 md:gap-4 lg:gap-8">
+    <div
+      class="flex flex-col gap-2 xl:gap-4 2xl:gap-6 w-full md:justify-center md:text-center items-center"
+    >
+      <p class="text-[#4D4D4D] text-2xl md:text-4xl xl:text-5xl font-bold">
+        Caring is the new marketing
+      </p>
+      <p class="text-[#717171] text-lg md:text-xl lg:text-2xl lg:w-[90%] ">
+        The Nexcent blog is the best place to read about the latest membership
+        insights, trends and more. See who's joining the community, read about
+        how our community are increasing their membership income and lot's
+        more.​
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 ">
+
+      <div class=" sm:w-full flex flex-col items-center" *ngFor="let item of marketing">
+        <img [src]="'../assets/images/'+item.img" class="w-full object-cover" alt="">
+
+        <div style="box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);" class="bg-[#F5F7FA] relative bottom-16 lg:bottom-20 w-[85%] p-4 rounded-lg flex flex-col items-center gap-4 lg:gap-6 ">
+          <p class="text-[#717171] text-base lg:text-xl font-bold text-center h-[60px] sm:h-[90px] md:h-[80px] lg:h-[120px] xl:h-[130px] 2xl:h-[80px]">{{item.p}}</p>
+          <div class="flex ">
+            <p
+              class="text-base xl:text-xl font-bold text-[#4CAF4F]"
+            >
+              Read More
+            </p>
+            '
+            <img src="../assets/images/Right.svg" alt="" />
+          </div>
         </div>
       </div>
 
 
+
     </div>
-
   </div>
-</div>
 
+</div>
