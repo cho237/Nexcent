@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.general_padding{
+  @apply px-6 sm:px-20 xl:px-60 2xl:px-80
+}
+*{
+  color: #18191F
+}
