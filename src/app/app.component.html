@@ -24,7 +24,7 @@
       <div class="">
         <button
           type="button"
-          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center dark:focus:ring-blue-800 text-lg lg:text-xl"
+          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none  font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center text-lg lg:text-xl"
         >
           Register
         </button>
@@ -115,7 +115,7 @@
       <div class="">
         <button
           type="button"
-          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center dark:focus:ring-blue-800 text-base lg:text-lg"
+          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none  font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center text-base lg:text-lg"
         >
           Learn More
         </button>
@@ -185,7 +185,7 @@
       <div class="">
         <button
           type="button"
-          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center dark:focus:ring-blue-800 text-base lg:text-lg"
+          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none  font-medium rounded-lg px-4 py-2 lg:px-6 lg:py-3 text-center text-base lg:text-lg"
         >
           Learn More
         </button>
@@ -225,13 +225,13 @@
             class="h-6 lg:h-8"
             alt=""
           />
-          <div class="flex mt-2 sm:mt-0">
+          <div class="flex mt-2 sm:mt-0 cursor-pointer">
             <p
               class="text-lg xl:text-xl font-bold text-[#4CAF4F]"
             >
               Meet all customers
             </p>
-            '
+
             <img src="../assets/images/Right.svg" alt="" />
           </div>
         </div>
@@ -254,7 +254,6 @@
       </p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 ">
-
       <div class=" sm:w-full flex flex-col items-center" *ngFor="let item of marketing">
         <img [src]="'../assets/images/'+item.img" class="w-full object-cover" alt="">
 
@@ -262,19 +261,34 @@
           <p class="text-[#717171] text-base lg:text-xl font-bold text-center h-[50px] sm:h-[65px] md:h-[60px] lg:h-[80px] xl:h-[100px] 2xl:h-[60px]">{{item.p}}</p>
           <div class="flex mt-2">
             <p
-              class="text-base  xl:text-xl font-bold text-[#4CAF4F]"
+              class="text-base  xl:text-xl font-bold text-[#4CAF4F]  cursor-pointer"
             >
               Read More
             </p>
-            '
             <img src="../assets/images/Right.svg" alt="" />
           </div>
         </div>
       </div>
-
-
-
     </div>
   </div>
 
+  <div class="general_padding flex justify-center bg-[#F5F7FA] py-4 lg:py-8">
+    <div
+        class="flex w-full lg:w-[75%] xl:w-[70%] 2xl:w-[60%] flex-col gap-4 xl:gap-8 2xl:gap-10 md:justify-center md:text-center"
+      >
+        <p class="text-[#4D4D4D] text-2xl md:text-4xl xl:text-5xl font-bold">
+          Pellentesque suscipit fringilla libero eu.
+        </p>
+        <div class="">
+          <button
+          type="button"
+          class="text-white bg-[#4CAF4F] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-center dark:focus:ring-blue-800 "
+        >
+          <img src="../assets/images/Button.svg" class="h-9 md:h-12 lg:h-14" alt="" />
+        </button>
+        </div>
+      </div>
+  </div>
 </div>
+<app-footer></app-footer>
+
